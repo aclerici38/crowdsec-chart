@@ -7,5 +7,5 @@ metadata:
         type: docker-start-script
         version: v1
 data:
-    docker_start.sh: |-
-{{ (.Files.Get "files/docker-start-custom.sh") | indent 8 }}
+    docker_start.sh: |
+{{- (.Files.Get "files/docker-start-custom.sh") | nindent 8 }}

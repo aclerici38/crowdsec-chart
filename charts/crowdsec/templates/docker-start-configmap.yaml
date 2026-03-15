@@ -6,7 +6,6 @@ metadata:
         k8s-app: crowdsec
         type: docker-start-script
         version: v1
-
 data:
     docker_start.sh: |-
 {{ (.Files.Get "files/docker-start-custom.sh") | indent 8 }}
